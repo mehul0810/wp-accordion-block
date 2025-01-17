@@ -6,8 +6,8 @@
  * @license           GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       WPAccordionBlock
- * Plugin URI:        https://wp_accordion_block.mehulgohil.com
+ * Plugin Name:       WP Accordion Block
+ * Plugin URI:        https://wordpress.org/plugins/wp-accordion-block/
  * Description:       A starter WordPress plugin scaffold which comes pre-configured for block development, admin dashboard with settings and standard plugin code.
  * Version:           0.4.0-beta
  * Requires at least: 6.0
@@ -40,11 +40,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WP_ACCORDION_BLOCK_VERSION', '0.4.0-beta' );
+define( 'WP_ACCORDION_BLOCK_VERSION', '1.0.0' );
 define( 'WP_ACCORDION_BLOCK_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WP_ACCORDION_BLOCK_ROOT_FILE', __FILE__ );
 define( 'WP_ACCORDION_BLOCK_ROOT_FILE_RELATIVE_PATH', plugin_basename( __FILE__ ) );
-define( 'WP_ACCORDION_BLOCK_SLUG', 'wp_accordion_block' );
+define( 'WP_ACCORDION_BLOCK_SLUG', 'wp-accordion-block' );
 define( 'WP_ACCORDION_BLOCK_FOLDER', dirname( plugin_basename( __FILE__ ) ) );
 define( 'WP_ACCORDION_BLOCK_URL', plugins_url( '', __FILE__ ) );
 
@@ -55,7 +55,7 @@ if ( is_readable( $wp_accordion_block_autoloader ) ) {
 } else { // Something very unexpected. Error out gently with an admin_notice and exit loading.
 	if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
 		error_log( // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
-			__( 'Error loading autoloader file for WPAccordionBlock plugin', 'wp_accordion_block' )
+			__( 'Error loading autoloader file for WPAccordionBlock plugin', 'wp-accordion-block' )
 		);
 	}
 
@@ -69,7 +69,7 @@ if ( is_readable( $wp_accordion_block_autoloader ) ) {
 				printf(
 					wp_kses(
 						/* translators: Placeholder is a link to a support document. */
-						__( 'Your installation of WPAccordionBlock is incomplete. If you installed WPAccordionBlock from GitHub, please refer to <a href="%1$s" target="_blank" rel="noopener noreferrer">this document</a> to set up your development environment. WPAccordionBlock must have Composer dependencies installed and built via the build command.', 'wp_accordion_block' ),
+						__( 'Your installation of WPAccordionBlock is incomplete. If you installed WPAccordionBlock from GitHub, please refer to <a href="%1$s" target="_blank" rel="noopener noreferrer">this document</a> to set up your development environment. WPAccordionBlock must have Composer dependencies installed and built via the build command.', 'wp-accordion-block' ),
 						array(
 							'a' => array(
 								'href'   => array(),
@@ -78,7 +78,7 @@ if ( is_readable( $wp_accordion_block_autoloader ) ) {
 							),
 						)
 					),
-					'https://github.com/SmallTownDev/wp_accordion_block'
+					'https://github.com/SmallTownDev/wp-accordion-block'
 				);
 				?>
 			</p>

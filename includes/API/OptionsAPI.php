@@ -114,7 +114,7 @@ class OptionsAPI {
 			if ( $options->has( $key ) ) {
 				$result = $options->get( $key );
 			} else {
-				return new WP_Error( 'option_error', __( 'Invalid or expired option name.', 'wp_accordion_block' ) );
+				return new WP_Error( 'option_error', __( 'Invalid or expired option name.', 'wp-accordion-block' ) );
 			}
 		} else {
 			$result = $options->get();
@@ -140,12 +140,12 @@ class OptionsAPI {
 				$options->set( $key, $value );
 			}
 		} else {
-			return new WP_Error( 'settings_error', __( 'No settings provided.', 'wp_accordion_block' ) );
+			return new WP_Error( 'settings_error', __( 'No settings provided.', 'wp-accordion-block' ) );
 		}
 
 		return new WP_REST_Response(
 			array(
-				'message' => __( 'Settings updated.', 'wp_accordion_block' ),
+				'message' => __( 'Settings updated.', 'wp-accordion-block' ),
 			),
 			200
 		);
@@ -167,15 +167,15 @@ class OptionsAPI {
 			if ( $options->has( $key ) ) {
 				$options->delete( $key );
 			} else {
-				return new WP_Error( 'option_error', __( 'Invalid or expired option name.', 'wp_accordion_block' ) );
+				return new WP_Error( 'option_error', __( 'Invalid or expired option name.', 'wp-accordion-block' ) );
 			}
 		} else {
-			return new WP_Error( 'option_error', __( 'No option key is provided.', 'wp_accordion_block' ) );
+			return new WP_Error( 'option_error', __( 'No option key is provided.', 'wp-accordion-block' ) );
 		}
 
 		return new WP_REST_Response(
 			array(
-				'message' => __( 'Setting deleted.', 'wp_accordion_block' ),
+				'message' => __( 'Setting deleted.', 'wp-accordion-block' ),
 			),
 			200
 		);

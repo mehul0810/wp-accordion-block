@@ -1,5 +1,5 @@
 {
-  "name": "wp_accordion_block",
+  "name": "wp-accordion-block",
   "version": "0.4.0-beta",
   "description": "A starter WordPress plugin scaffold which comes pre-configured for block development, admin settings and standard WordPress plugin rules.",
   "main": "build/index.js",

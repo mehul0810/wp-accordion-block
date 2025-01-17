@@ -37,8 +37,8 @@ class RegisterAdmin {
 		$primary_slug = WP_ACCORDION_BLOCK_SLUG;
 
 		$dashboard_page_suffix = add_menu_page(
-			_x( 'WPAccordionBlock Dashboard', 'Page title', 'wp_accordion_block' ),
-			_x( 'WPAccordionBlock', 'Menu title', 'wp_accordion_block' ),
+			_x( 'WPAccordionBlock Dashboard', 'Page title', 'wp-accordion-block' ),
+			_x( 'WPAccordionBlock', 'Menu title', 'wp-accordion-block' ),
 			'manage_options',
 			$primary_slug,
 			array( $this, 'plugin_dashboard_page' ),
@@ -85,7 +85,7 @@ class RegisterAdmin {
 			WP_ACCORDION_BLOCK_ROOT_FILE,
 			array(
 				'in_footer'  => true,
-				'textdomain' => 'wp_accordion_block',
+				'textdomain' => 'wp-accordion-block',
 			)
 		);
 
@@ -159,7 +159,7 @@ class RegisterAdmin {
 			array(
 				'id'     => $parent_menu_id,
 				'parent' => null,
-				'title'  => __( 'WPAccordionBlock Tools', 'wp_accordion_block' ),
+				'title'  => __( 'WPAccordionBlock Tools', 'wp-accordion-block' ),
 				'href'   => esc_url( admin_url( 'admin.php?page=' . $prefix ) ),
 			)
 		);
@@ -170,7 +170,7 @@ class RegisterAdmin {
 			array(
 				'parent' => $parent_menu_id,
 				'id'     => $prefix . '-flush-rewrite-rules',
-				'title'  => __( 'Flush Permalinks', 'wp_accordion_block' ),
+				'title'  => __( 'Flush Permalinks', 'wp-accordion-block' ),
 				'href'   => esc_url( admin_url( 'admin-ajax.php?action=' . $prefix . '_flush_rules&nonce=' . $nonce ) ),
 			)
 		);

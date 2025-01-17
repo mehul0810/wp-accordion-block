@@ -1,5 +1,5 @@
 {
-    "name": "mehulgohil/wp_accordion_block",
+    "name": "mehulgohil/wp-accordion-block",
     "description": "A starter WordPress plugin scaffold which comes pre-configured for block development, admin dashboard with settings and standard plugin code.",
     "type": "wordpress-plugin",
     "author": "Mehul Gohil<hey@mehulgohil.com>",

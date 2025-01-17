@@ -87,7 +87,7 @@ class Plugin {
 	 * @return array
 	 */
 	public function action_links( $actions ) {
-		$settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=wp_accordion_block' ) ) . '">' . __( 'Dashboard', 'wp_accordion_block' ) . '</a>';
+		$settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=wp-accordion-block' ) ) . '">' . __( 'Dashboard', 'wp-accordion-block' ) . '</a>';
 		array_unshift( $actions, $settings_link );
 
 		return $actions;
